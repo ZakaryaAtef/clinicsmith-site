@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="ClinicSmith: Clinic management: patients, visits, prescriptions and appointments. Windows app, privacy policy and support.">
+  <title>ClinicSmith</title>
+  <style>
+    :root {
+      --bg: #ffffff; --fg: #1b1f27; --muted: #5a6272; --line: #e2e6ed;
+      --accent: #3f51b5; --link: #3546a8; --cta-bg: #3f51b5; --cta-fg: #ffffff; --soft: #f4f5fc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #10141b; --fg: #e8eaef; --muted: #a3aab8; --line: #283040;
+        --accent: #7c8cf0; --link: #a9b4ff; --cta-bg: #a9b4ff; --cta-fg: #10153a; --soft: #171a2c;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--fg); border-top: 4px solid var(--accent);
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, Tahoma, "Noto Sans Arabic", "Noto Sans", sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 20px 16px 64px; }
+    a { color: var(--link); overflow-wrap: anywhere; }
+    .top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px;
+      padding-bottom: 12px; border-bottom: 1px solid var(--line); font-size: 15px; }
+    .brand { color: var(--fg); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+    .dot { width: 12px; height: 12px; border-radius: 4px; background: var(--accent); display: inline-block; }
+    .links a { margin-inline-end: 4px; }
+    h1 { font-size: 30px; line-height: 1.25; margin: 28px 0 6px; }
+    h2 { font-size: 19px; line-height: 1.35; margin: 32px 0 8px; }
+    h3 { font-size: 16px; margin: 20px 0 4px; }
+    p, ul { margin: 0 0 12px; }
+    ul { padding-inline-start: 22px; }
+    li { margin-bottom: 6px; }
+    .lead { font-size: 19px; color: var(--muted); margin-bottom: 16px; }
+    .meta { color: var(--muted); margin: 0 0 20px; }
+    .card { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin: 16px 0; }
+    .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+    .cta { display: inline-block; background: var(--cta-bg); color: var(--cta-fg); padding: 10px 18px; border-radius: 10px;
+      text-decoration: none; font-weight: 600; margin: 8px 0 4px; }
+    .cta:hover, .cta:focus-visible { filter: brightness(1.08); }
+    .sub { font-size: 15px; color: var(--muted); }
+    code { font-family: ui-monospace, Consolas, monospace; font-size: 14px; overflow-wrap: anywhere; }
+    section + section { border-top: 1px solid var(--line); margin-top: 48px; }
+    [dir="rtl"] { text-align: right; }
+    [dir="rtl"] code, [dir="rtl"] .ltr { direction: ltr; unicode-bidi: isolate; }
+    footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>ClinicSmith</a>
+    <nav aria-label="Language"><a href="#en">English</a> · <a href="#ar" lang="ar">العربية</a></nav>
+  </div>
+
+  <section id="en" lang="en">
+    <p class="sub links"><a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+    <h1>ClinicSmith</h1>
+    <p class="lead">Clinic management: patients, visits, prescriptions and appointments.</p>
+    <p>ClinicSmith runs a clinic from Windows: reception and each doctor's queue, patients' files with every visit, prescriptions, lab and radiology requests, appointments with online booking, and the clinic's accounts. It is made for private clinics and medical centres, with one doctor or many and one branch or several, and works in Arabic, English, French, German, Spanish, Italian and Turkish.</p>
+    <p><a class="cta" href="https://apps.microsoft.com/detail/9P0DVSPNMFKG">Get it from Microsoft Store</a></p>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Reception and each doctor's daily queue.</li>
+      <li>Patient files: visits, diagnoses (ICD-10), vital signs, allergies and chronic conditions, images and documents.</li>
+      <li>Prescriptions, lab and radiology requests and medical reports, printed on the clinic's letterhead.</li>
+      <li>Appointments by doctor and branch, online booking for patients, and reminders by SMS or WhatsApp.</li>
+      <li>Accounts: fees, debts, expenses, insurance and contracted companies, employees and salaries.</li>
+      <li>Dental charts, diet plans and clinic supplies.</li>
+      <li>Staff accounts with roles and permissions, and several branches.</li>
+    </ul>
+
+    <h2>How it works</h2>
+    <p>ClinicSmith is the Windows app of an online service, so it needs an internet connection and an account. Open the app, choose <b>Create a new clinic</b> on the sign-in screen, then add your staff in <b>Users &amp; permissions</b>. Every PC and laptop of the clinic signs in to the same clinic, so reception and the doctors see the same patients and appointments.</p>
+
+    <h2>Privacy and support</h2>
+    <p>Read the <a href="privacy.html">privacy policy</a> to see what the service stores and how to delete it. For help,
+      see <a href="support.html">Support</a> or write to <a href="mailto:zakarya.atef2017@gmail.com">zakarya.atef2017@gmail.com</a>.</p>
+  </section>
+
+  <section id="ar" lang="ar" dir="rtl">
+    <p class="sub links"><a href="index.html">الرئيسية</a> · <a href="privacy.html">سياسة الخصوصية</a> · <a href="support.html">الدعم</a></p>
+    <h1>ClinicSmith</h1>
+    <p class="lead">إدارة العيادات: المرضى والزيارات والروشتات والمواعيد.</p>
+    <p>يدير ClinicSmith العيادة من ويندوز: الاستقبال ودور كل طبيب، وملفات المرضى بكل زياراتهم، والروشتات، وطلبات التحاليل والأشعة، والمواعيد مع الحجز أونلاين، وحسابات العيادة. صُمّم للعيادات الخاصة والمراكز الطبية، بطبيب واحد أو أكثر وفرع واحد أو عدة فروع، ويعمل بالعربية والإنجليزية والفرنسية والألمانية والإسبانية والإيطالية والتركية.</p>
+    <p><a class="cta" href="https://apps.microsoft.com/detail/9P0DVSPNMFKG">احصل عليه من Microsoft Store</a></p>
+
+    <h2>ماذا يقدّم</h2>
+    <ul>
+      <li>الاستقبال ودور كل طبيب في اليوم.</li>
+      <li>ملفات المرضى: الزيارات والتشخيصات (ICD-10) والعلامات الحيوية والحساسية والأمراض المزمنة والصور والمستندات.</li>
+      <li>الروشتات وطلبات التحاليل والأشعة والتقارير الطبية، مطبوعة على ورق العيادة.</li>
+      <li>مواعيد لكل طبيب وفرع، وحجز أونلاين للمرضى، وتذكير برسالة SMS أو واتساب.</li>
+      <li>الحسابات: الكشوفات والديون والمصروفات وشركات التأمين والتعاقدات والموظفون والرواتب.</li>
+      <li>خريطة الأسنان وأنظمة الغذاء ومستلزمات العيادة.</li>
+      <li>حسابات للموظفين بأدوار وصلاحيات، وعدة فروع.</li>
+    </ul>
+
+    <h2>كيف يعمل</h2>
+    <p>ClinicSmith هو تطبيق ويندوز لخدمة أونلاين، لذلك يحتاج اتصالًا بالإنترنت وحسابًا. افتح التطبيق واختر <b>إنشاء عيادة جديدة</b> في شاشة تسجيل الدخول، ثم أضف الموظفين من <b>صلاحيات المستخدمين</b>. كل أجهزة العيادة تدخل على العيادة نفسها، فيرى الاستقبال والأطباء المرضى والمواعيد نفسها.</p>
+
+    <h2>الخصوصية والدعم</h2>
+    <p>اقرأ <a href="privacy.html#ar">سياسة الخصوصية</a> لتعرف ما تحفظه الخدمة وكيف تحذفه. للمساعدة راجع
+      <a href="support.html#ar">صفحة الدعم</a> أو راسلنا على <a href="mailto:zakarya.atef2017@gmail.com">zakarya.atef2017@gmail.com</a>.</p>
+  </section>
+
+  <footer>© 2026 Zakarya Atef · <a href="mailto:zakarya.atef2017@gmail.com">zakarya.atef2017@gmail.com</a></footer>
+</main>
+</body>
+</html>
