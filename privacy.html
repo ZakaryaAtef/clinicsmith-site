@@ -62,7 +62,7 @@
     <p class="meta">Effective 4 November 2026</p>
     <p>ClinicSmith is a clinic management app for patients' files, visits, prescriptions, appointments and the clinic's accounts. The Windows app is the client of an online service run by its developer, Zakarya Atef (“we”, “us”). What you enter in the app is sent to that service and stored on its server. This policy explains what is stored, why, who else can receive it, and how to have it deleted.</p>
     <h2>Where the data is kept</h2>
-    <p>The server is a computer operated by the developer. The app reaches it over an encrypted HTTPS connection at <code>https://dell-server.tailda7803.ts.net:8443</code> through Tailscale Funnel, which forwards the encrypted connection to our server; the encryption ends on our server. Data is stored in a SQL Server database and, for photos and documents, in files on the same server.</p>
+    <p>The server is a computer operated by the developer. The app reaches it over an encrypted HTTPS connection at <code>https://dell-server.tailda7803.ts.net:8443</code> through Tailscale Funnel, which forwards the encrypted connection to our server; the encryption ends on our server. We also use Cloudflare tunnels for testing links: connections through those links are encrypted with HTTPS too and pass through Cloudflare's network on their way to our server. The app itself uses the address above. Data is stored in a SQL Server database and, for photos and documents, in files on the same server.</p>
     <p>The app can also be connected to another server (<b>Change server</b> on the sign-in screen), for example one a business runs for itself. Data on such a server is controlled by whoever runs it; this policy covers only our service.</p>
     <h2>Your account</h2>
     <p>When you sign up, or a clinic administrator adds you, the service stores:</p>
@@ -100,12 +100,12 @@
     <h2>Backups</h2>
     <p>The server makes an automatic backup of each clinic every night and keeps the last 14. A backup holds the clinic's data and files and its users' sign-in email address or mobile number, never a password. A clinic's administrator can also download a backup file from the app (<b>Backup &amp; restore</b>); that file is then in their hands, and they are responsible for keeping it safe.</p>
     <h2>Messages sent for you</h2>
-    <p>The service can send emails, text messages (SMS) and WhatsApp messages: sign-in, verification and password-reset codes to you, notices about your clinic's subscription or closing, and, when the clinic uses these features, messages to its patients, such as booking codes and appointment reminders.</p>
+    <p>The service can send emails, text messages (SMS) and WhatsApp messages: sign-in, verification and password-reset codes to you, notices about closing your clinic, and, when the clinic uses these features, messages to its patients, such as booking codes and appointment reminders.</p>
     <p>These go through an outside provider only when one is set up on the server: an email (SMTP) server, Twilio or another SMS gateway, or Meta's WhatsApp Cloud API. That provider then receives the recipient's address or number and the text of the message. <b>Today none of them is set up on our server</b>, so no message leaves it: the server writes such messages to its log instead (see Logs below).</p>
     <h2>Error reports</h2>
     <p>The app and the server can send crash reports to Sentry, an error-monitoring service, but only when that is switched on in their configuration. <b>It is switched off</b> on our server and in the Microsoft Store app, so no crash reports are sent anywhere. If we switch it on, we will update this policy first; the reports are set up to carry the error and technical details only, without request contents, cookies or user details.</p>
-    <h2>Subscriptions and payments</h2>
-    <p>If you pay for a plan, payment happens on the payment provider's own page, opened in your browser: Paymob in Egypt, Stripe elsewhere. Your card details go straight to that provider; neither the app nor our server ever sees or stores them. The server keeps the plan, the amounts, dates and status of payments, and the provider's reference numbers. Today no payment provider is connected to our server.</p>
+    <h2>Payments</h2>
+    <p>The app is currently free: there are no plans, subscriptions or payments, and no payment provider is connected to our server.</p>
     <h2>Logs</h2>
     <p>The server keeps technical logs for 30 days: each request with its time, path and result and the number of the clinic and user that made it, errors, and, while no message provider is set up, the messages described above. We use them only to keep the service running and to fix problems.</p>
     <h2>What we do not do</h2>
@@ -145,7 +145,7 @@
     <p class="meta">سارية من ٤ نوفمبر ٢٠٢٦</p>
     <p>ClinicSmith تطبيق لإدارة العيادات: ملفات المرضى والزيارات والروشتات والمواعيد وحسابات العيادة. تطبيق ويندوز هو واجهة لخدمة أونلاين يشغّلها مطوّره زكريا عاطف ("نحن"). ما تُدخله في التطبيق يُرسَل إلى هذه الخدمة ويُحفظ على خادمها. توضّح هذه السياسة ما يُحفظ ولماذا، ومن قد يستلمه، وكيف تطلب حذفه.</p>
     <h2>أين تُحفظ البيانات</h2>
-    <p>الخادم جهاز كمبيوتر يشغّله المطوّر. يصل إليه التطبيق عبر اتصال HTTPS مشفّر على العنوان <code>https://dell-server.tailda7803.ts.net:8443</code> من خلال خدمة Tailscale Funnel التي تمرّر الاتصال المشفّر إلى خادمنا، ولا يُفك التشفير إلا على خادمنا. تُحفظ البيانات في قاعدة بيانات SQL Server، والصور والمستندات في ملفات على الخادم نفسه.</p>
+    <p>الخادم جهاز كمبيوتر يشغّله المطوّر. يصل إليه التطبيق عبر اتصال HTTPS مشفّر على العنوان <code>https://dell-server.tailda7803.ts.net:8443</code> من خلال خدمة Tailscale Funnel التي تمرّر الاتصال المشفّر إلى خادمنا، ولا يُفك التشفير إلا على خادمنا. ونستخدم أيضًا أنفاق Cloudflare لروابط الاختبار: الاتصالات عبر هذه الروابط مشفّرة كذلك بـ HTTPS وتمر عبر شبكة Cloudflare في طريقها إلى خادمنا. أما التطبيق نفسه فيستخدم العنوان المذكور أعلاه. تُحفظ البيانات في قاعدة بيانات SQL Server، والصور والمستندات في ملفات على الخادم نفسه.</p>
     <p>يمكن أيضًا توصيل التطبيق بخادم آخر (<b>تغيير الخادم</b> في شاشة تسجيل الدخول)، مثل خادم تشغّله منشأة لنفسها. البيانات على مثل هذا الخادم يتحكّم فيها من يشغّله، وهذه السياسة تخصّ خدمتنا فقط.</p>
     <h2>حسابك</h2>
     <p>عند تسجيلك، أو عندما يضيفك مدير العيادة، تحفظ الخدمة:</p>
@@ -183,12 +183,12 @@
     <h2>النسخ الاحتياطي</h2>
     <p>يأخذ الخادم نسخة احتياطية تلقائية من كل عيادة كل ليلة ويحتفظ بآخر 14 نسخة. تحتوي النسخة على بيانات العيادة وملفاتها وبريد أو رقم موبايل الدخول لمستخدميها، ولا تحتوي أي كلمة مرور. ويستطيع مدير العيادة أيضًا تنزيل ملف نسخة احتياطية من التطبيق (<b>النسخ الاحتياطي</b>)؛ هذا الملف يصبح في يده، وهو المسؤول عن حفظه بأمان.</p>
     <h2>الرسائل التي تُرسَل نيابةً عنك</h2>
-    <p>تستطيع الخدمة إرسال رسائل بريد إلكتروني ورسائل SMS ورسائل واتساب: رموز الدخول والتأكيد واستعادة كلمة المرور إليك، وإشعارات عن اشتراك العيادة أو إغلاقها، وعندما تستخدم العيادة هذه الميزات، رسائل إلى مرضاها مثل رموز تأكيد الحجز وتذكير المواعيد.</p>
+    <p>تستطيع الخدمة إرسال رسائل بريد إلكتروني ورسائل SMS ورسائل واتساب: رموز الدخول والتأكيد واستعادة كلمة المرور إليك، وإشعارات عن إغلاق العيادة، وعندما تستخدم العيادة هذه الميزات، رسائل إلى مرضاها مثل رموز تأكيد الحجز وتذكير المواعيد.</p>
     <p>لا تمر هذه الرسائل عبر مزوّد خارجي إلا إذا ضُبط مزوّد على الخادم: خادم بريد (SMTP)، أو Twilio أو بوابة SMS أخرى، أو WhatsApp Cloud API من Meta. عندها يستلم المزوّد عنوان المستلم أو رقمه ونص الرسالة. <b>اليوم لا يوجد أي مزوّد مضبوط على خادمنا</b>، فلا تخرج أي رسالة منه، بل يكتبها الخادم في سجلّه بدلًا من ذلك (انظر «السجلات» أدناه).</p>
     <h2>تقارير الأعطال</h2>
     <p>يستطيع التطبيق والخادم إرسال تقارير الأعطال إلى Sentry، وهي خدمة لمتابعة الأخطاء، لكن فقط إذا فُعّل ذلك في إعداداتهما. <b>هذه الميزة متوقفة</b> على خادمنا وفي تطبيق Microsoft Store، فلا تُرسَل أي تقارير أعطال إلى أي جهة. إذا فعّلناها سنحدّث هذه السياسة أولًا، والتقارير مضبوطة لتحمل الخطأ وتفاصيله التقنية فقط، بدون محتوى الطلبات أو ملفات تعريف الارتباط أو بيانات المستخدم.</p>
-    <h2>الاشتراكات والدفع</h2>
-    <p>إذا دفعت مقابل باقة، يتم الدفع في صفحة مزوّد الدفع نفسه التي تُفتح في متصفحك: Paymob في مصر وStripe في غيرها. بيانات بطاقتك تذهب مباشرة إلى المزوّد، ولا يراها التطبيق ولا خادمنا ولا يحفظانها. يحتفظ الخادم بالباقة ومبالغ المدفوعات وتواريخها وحالتها والأرقام المرجعية لدى المزوّد. اليوم لا يوجد مزوّد دفع متصل بخادمنا.</p>
+    <h2>الدفع</h2>
+    <p>التطبيق مجاني حاليًا: لا توجد باقات ولا اشتراكات ولا مدفوعات، ولا يوجد مزوّد دفع متصل بخادمنا.</p>
     <h2>السجلات</h2>
     <p>يحتفظ الخادم بسجلات تقنية لمدة 30 يومًا: كل طلب بوقته ومساره ونتيجته ورقم العيادة والمستخدم الذي أرسله، والأخطاء، وما دام لا يوجد مزوّد رسائل مضبوط، الرسائل المذكورة أعلاه. نستخدمها فقط لتشغيل الخدمة وإصلاح المشكلات.</p>
     <h2>ما لا نفعله</h2>
